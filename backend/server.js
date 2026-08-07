@@ -19,7 +19,11 @@ connectCloudinary();
 app.use(express.json());
 app.use(
   cors({
-    origin: ['http://localhost:5173', 'https://forever-tau-one.vercel.app'],
+    origin: [
+      'http://localhost:5173',
+      'https://forever-tau-one.vercel.app',
+      'https://forever-admin-sepia-theta.vercel.app',
+    ],
     credentials: true,
   }),
 );
